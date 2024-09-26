@@ -126,18 +126,31 @@ sayilar.forEach((sayi)=>{
 /* kodlar buraya */
 
 // 3c çözümü:
+ucebolunenlerintoplami=ucetambolunenler.reduce((accumulator, currentValue) => accumulator + currentValue,
+0,)
+console.log(ucebolunenlerintoplami)
 
 /* kodlar buraya */
 
-// 3d çözümü
+// 3d çözümü:
+besyuzdenkucuksayilar=sayilar.filter((sayi)=>{
+  return sayi<500
+})
+console.log(besyuzdenkucuksayilar)
 
 /* kodlar buraya */
 
-// 3e çözümü
+// 3e çözümü:
+siralisayilar = besyuzdenkucuksayilar.sort((a,b)=>{return a-b})
+console.log(siralisayilar)
 
 /* kodlar buraya */
 
-// 3f çözümü
+// 3f çözümü:
+
+
+
+
 
 /* kodlar buraya */
 
