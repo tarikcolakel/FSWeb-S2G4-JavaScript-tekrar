@@ -147,6 +147,32 @@ console.log(siralisayilar)
 /* kodlar buraya */
 
 // 3f çözümü:
+const tekraredensayilarObjesi = {};
+tekraredensayilar = [];
+// tekraredensayilar = {
+// 	"45": 3,
+// 	"12.5": 2,
+// ...
+// };
+// {sayı} sayısı {tekrarSayisi} kere tekrar edilmiştir"
+
+sayilar.forEach((sayi) => {
+  if (tekraredensayilarObjesi[sayi]) {
+    tekraredensayilarObjesi[sayi] += 1;
+  } else {
+    tekraredensayilarObjesi[sayi] = 1;
+  }
+});
+
+/* sample ={
+	"key": "value"
+}
+ */
+for (let enaktar in tekraredensayilarObjesi) {
+  tekraredensayilar.push(
+    `${enaktar} sayısı ${tekraredensayilarObjesi[enaktar]} kere tekrar edilmiştir`
+  );
+}
 
 
 
